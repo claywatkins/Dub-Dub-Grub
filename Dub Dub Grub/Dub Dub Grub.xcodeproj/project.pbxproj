@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BA0FA49267AC170007AB55E /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA0FA48267AC170007AB55E /* LocationDetailView.swift */; };
 		0BC67D24267A89D9007C5DFD /* Dub_Dub_GrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC67D23267A89D9007C5DFD /* Dub_Dub_GrubApp.swift */; };
 		0BC67D28267A89DA007C5DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC67D27267A89DA007C5DFD /* Assets.xcassets */; };
 		0BC67D2B267A89DA007C5DFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC67D2A267A89DA007C5DFD /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BA0FA48267AC170007AB55E /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		0BC67D20267A89D9007C5DFD /* Dub Dub Grub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dub Dub Grub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC67D23267A89D9007C5DFD /* Dub_Dub_GrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dub_Dub_GrubApp.swift; sourceTree = "<group>"; };
 		0BC67D27267A89DA007C5DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				0BC67D3A267AA0A9007C5DFD /* LocationMapView.swift */,
 				0BC67D3C267AA0C8007C5DFD /* LocationListView.swift */,
 				0BC67D3E267AA0D2007C5DFD /* ProfileView.swift */,
+				0BA0FA48267AC170007AB55E /* LocationDetailView.swift */,
 			);
 			path = "Dub Dub Grub";
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				0BC67D37267AA004007C5DFD /* Color+Extension.swift in Sources */,
 				0BC67D3B267AA0A9007C5DFD /* LocationMapView.swift in Sources */,
 				0BC67D3D267AA0C8007C5DFD /* LocationListView.swift in Sources */,
+				0BA0FA49267AC170007AB55E /* LocationDetailView.swift in Sources */,
 				0BC67D39267AA06E007C5DFD /* AppTabView.swift in Sources */,
 				0BC67D3F267AA0D2007C5DFD /* ProfileView.swift in Sources */,
 				0BC67D24267A89D9007C5DFD /* Dub_Dub_GrubApp.swift in Sources */,
