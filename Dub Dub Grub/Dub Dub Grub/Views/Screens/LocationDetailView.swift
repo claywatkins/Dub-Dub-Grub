@@ -14,24 +14,15 @@ struct LocationDetailView: View {
     
     var body: some View {
         VStack(spacing: 16) {
-            Image("default-banner-asset")
-                .resizable()
-                .scaledToFill()
-                .frame(height: 120)
+            BannerImageView(imageName: "default-banner-asset")
             HStack {
-                Label("123 Main Street", systemImage: "mappin.and.ellipse")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                AddressView(address: "123 Main Street")
                 Spacer()
             }
             .padding(.horizontal)
             .padding(.top, 5)
             
-            Text("It's Chipolte. Enough Said. It's Chipolte. Enough Said. It's Chipolte. Enough Said. It's Chipolte. Enough Said. It's Chipolte. Enough Said. It's Chipolte. Enough Said. " )
-                .lineLimit(3)
-                .minimumScaleFactor(0.75)
-                .frame(height: 70)
-                .padding(.horizontal)
+            DesciptionView(text: "It's Chipolte. Enough Said. It's Chipolte. Enough Said. It's Chipolte. Enough Said. It's Chipolte. Enough Said. It's Chipolte. Enough Said. It's Chipolte. Enough Said. ")
             
             ZStack {
                 Capsule()
@@ -116,5 +107,37 @@ struct LocationButtonAction: View {
             
         }
         .padding(.leading, 15)
+    }
+}
+
+struct BannerImageView: View {
+    var imageName: String
+    var body: some View {
+        Image(imageName)
+            .resizable()
+            .scaledToFill()
+            .frame(height: 120)
+    }
+}
+
+struct AddressView: View {
+    var address: String
+    
+    var body: some View {
+        Label(address, systemImage: "mappin.and.ellipse")
+            .font(.caption)
+            .foregroundColor(.secondary)
+    }
+}
+
+struct DesciptionView: View {
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .lineLimit(3)
+            .minimumScaleFactor(0.75)
+            .frame(height: 70)
+            .padding(.horizontal)
     }
 }

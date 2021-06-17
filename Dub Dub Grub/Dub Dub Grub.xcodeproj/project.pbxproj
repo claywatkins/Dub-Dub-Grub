@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0BA0FA49267AC170007AB55E /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA0FA48267AC170007AB55E /* LocationDetailView.swift */; };
+		0BA7A5C1267BE998007CF61A /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7A5C0267BE998007CF61A /* LocationCell.swift */; };
+		0BA7A5C3267BE9DF007CF61A /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7A5C2267BE9DF007CF61A /* AvatarView.swift */; };
+		0BA7A5C5267BEBAC007CF61A /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7A5C4267BEBAC007CF61A /* CustomModifiers.swift */; };
+		0BA7A5C7267BEBE1007CF61A /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7A5C6267BEBE1007CF61A /* View+Extension.swift */; };
+		0BA7A5CA267BED32007CF61A /* DDGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA7A5C9267BED32007CF61A /* DDGButton.swift */; };
 		0BC67D24267A89D9007C5DFD /* Dub_Dub_GrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC67D23267A89D9007C5DFD /* Dub_Dub_GrubApp.swift */; };
 		0BC67D28267A89DA007C5DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC67D27267A89DA007C5DFD /* Assets.xcassets */; };
 		0BC67D2B267A89DA007C5DFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BC67D2A267A89DA007C5DFD /* Preview Assets.xcassets */; };
@@ -21,6 +26,11 @@
 
 /* Begin PBXFileReference section */
 		0BA0FA48267AC170007AB55E /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		0BA7A5C0267BE998007CF61A /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		0BA7A5C2267BE9DF007CF61A /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		0BA7A5C4267BEBAC007CF61A /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		0BA7A5C6267BEBE1007CF61A /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		0BA7A5C9267BED32007CF61A /* DDGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGButton.swift; sourceTree = "<group>"; };
 		0BC67D20267A89D9007C5DFD /* Dub Dub Grub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dub Dub Grub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BC67D23267A89D9007C5DFD /* Dub_Dub_GrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dub_Dub_GrubApp.swift; sourceTree = "<group>"; };
 		0BC67D27267A89DA007C5DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +57,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BA7A5C8267BED1B007CF61A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0BA7A5C6267BEBE1007CF61A /* View+Extension.swift */,
+				0BC67D36267AA004007C5DFD /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0BA7A5CB267BEE8E007CF61A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0BA7A5C4267BEBAC007CF61A /* CustomModifiers.swift */,
+				0BA7A5CE267BEEC7007CF61A /* CustomViews */,
+				0BA7A5CD267BEEBD007CF61A /* Cells */,
+				0BA7A5CC267BEE96007CF61A /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0BA7A5CC267BEE96007CF61A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0BC67D38267AA06E007C5DFD /* AppTabView.swift */,
+				0BC67D3A267AA0A9007C5DFD /* LocationMapView.swift */,
+				0BC67D3C267AA0C8007C5DFD /* LocationListView.swift */,
+				0BA0FA48267AC170007AB55E /* LocationDetailView.swift */,
+				0BC67D3E267AA0D2007C5DFD /* ProfileView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0BA7A5CD267BEEBD007CF61A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0BA7A5C0267BE998007CF61A /* LocationCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0BA7A5CE267BEEC7007CF61A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				0BA7A5C2267BE9DF007CF61A /* AvatarView.swift */,
+				0BA7A5C9267BED32007CF61A /* DDGButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		0BA7A5CF267BEEEC007CF61A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0BC67D27267A89DA007C5DFD /* Assets.xcassets */,
+				0BC67D2C267A89DA007C5DFD /* Info.plist */,
+				0BC67D23267A89D9007C5DFD /* Dub_Dub_GrubApp.swift */,
+				0BC67D32267A9DB2007C5DFD /* Dub Dub Grub.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		0BC67D17267A89D9007C5DFD = {
 			isa = PBXGroup;
 			children = (
@@ -67,17 +137,10 @@
 		0BC67D22267A89D9007C5DFD /* Dub Dub Grub */ = {
 			isa = PBXGroup;
 			children = (
-				0BC67D32267A9DB2007C5DFD /* Dub Dub Grub.entitlements */,
-				0BC67D23267A89D9007C5DFD /* Dub_Dub_GrubApp.swift */,
-				0BC67D27267A89DA007C5DFD /* Assets.xcassets */,
-				0BC67D2C267A89DA007C5DFD /* Info.plist */,
+				0BA7A5CF267BEEEC007CF61A /* Resources */,
+				0BA7A5CB267BEE8E007CF61A /* Views */,
+				0BA7A5C8267BED1B007CF61A /* Extensions */,
 				0BC67D29267A89DA007C5DFD /* Preview Content */,
-				0BC67D36267AA004007C5DFD /* Color+Extension.swift */,
-				0BC67D38267AA06E007C5DFD /* AppTabView.swift */,
-				0BC67D3A267AA0A9007C5DFD /* LocationMapView.swift */,
-				0BC67D3C267AA0C8007C5DFD /* LocationListView.swift */,
-				0BC67D3E267AA0D2007C5DFD /* ProfileView.swift */,
-				0BA0FA48267AC170007AB55E /* LocationDetailView.swift */,
 			);
 			path = "Dub Dub Grub";
 			sourceTree = "<group>";
@@ -168,11 +231,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BC67D37267AA004007C5DFD /* Color+Extension.swift in Sources */,
+				0BA7A5C5267BEBAC007CF61A /* CustomModifiers.swift in Sources */,
 				0BC67D3B267AA0A9007C5DFD /* LocationMapView.swift in Sources */,
 				0BC67D3D267AA0C8007C5DFD /* LocationListView.swift in Sources */,
 				0BA0FA49267AC170007AB55E /* LocationDetailView.swift in Sources */,
 				0BC67D39267AA06E007C5DFD /* AppTabView.swift in Sources */,
 				0BC67D3F267AA0D2007C5DFD /* ProfileView.swift in Sources */,
+				0BA7A5C7267BEBE1007CF61A /* View+Extension.swift in Sources */,
+				0BA7A5C1267BE998007CF61A /* LocationCell.swift in Sources */,
+				0BA7A5CA267BED32007CF61A /* DDGButton.swift in Sources */,
+				0BA7A5C3267BE9DF007CF61A /* AvatarView.swift in Sources */,
 				0BC67D24267A89D9007C5DFD /* Dub_Dub_GrubApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,7 +374,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Dub Dub Grub/Preview Content\"";
 				DEVELOPMENT_TEAM = XR5S8WV6LB;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Dub Dub Grub/Info.plist";
+				INFOPLIST_FILE = "Dub Dub Grub/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -329,7 +397,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Dub Dub Grub/Preview Content\"";
 				DEVELOPMENT_TEAM = XR5S8WV6LB;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Dub Dub Grub/Info.plist";
+				INFOPLIST_FILE = "Dub Dub Grub/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
